@@ -1,0 +1,237 @@
+Sistema de procesamiento funcional de pedidos
+Programa de consola en Kotlin
+
+===== ENTREGA 1 - Procesamiento funcional de pedidos =====
+
+===== 1. Todos los pedidos registrados =====
+Pedido #1 | Cliente: Juan Perez | Estatus: Entregado | Total: $15900.00
+Pedido #2 | Cliente: Maria Gomez | Estatus: Entregado | Total: $4850.00
+Pedido #3 | Cliente: Carlos Lopez | Estatus: Enviado | Total: $3150.00
+Pedido #4 | Cliente: Ana Martinez | Estatus: Pendiente | Total: $830.00
+Pedido #5 | Cliente: Luis Fernandez | Estatus: Entregado | Total: $1610.00
+Pedido #6 | Cliente: Laura Rodriguez | Estatus: Cancelado | Total: $1800.00
+Pedido #7 | Cliente: Pedro Sanchez | Estatus: Pendiente | Total: $2550.00
+Pedido #8 | Cliente: Juan Perez | Estatus: Entregado | Total: $1380.00
+Pedido #9 | Cliente: Maria Gomez | Estatus: Entregado | Total: $2600.00
+Pedido #10 | Cliente: Ana Martinez | Estatus: Cancelado | Total: $950.00
+Pedido #11 | Cliente: Laura Rodriguez | Estatus: Entregado | Total: $1220.00
+Pedido #12 | Cliente: Carlos Lopez | Estatus: Enviado | Total: $3650.00
+
+===== 2. Todos los productos disponibles =====
+- Laptop Gamer X1 | Categoria: Electronica | Precio: $15000.00
+- Mouse Inalambrico | Categoria: Electronica | Precio: $450.00
+- Teclado Mecanico | Categoria: Electronica | Precio: $1200.00
+- Monitor 24 pulgadas | Categoria: Electronica | Precio: $3200.00
+- Camiseta Deportiva | Categoria: Ropa | Precio: $350.00
+- Pantalon de mezclilla | Categoria: Ropa | Precio: $800.00
+- Zapatos Casual | Categoria: Ropa | Precio: $1200.00
+- Chaqueta Impermeable | Categoria: Ropa | Precio: $1800.00
+- Novela de ciencia ficcion | Categoria: Libros | Precio: $280.00
+- Libro de programacion Kotlin | Categoria: Libros | Precio: $550.00
+- Set de tazas | Categoria: Hogar | Precio: $320.00
+- Lampara de escritorio | Categoria: Hogar | Precio: $650.00
+- Bocina Bluetooth | Categoria: Electronica | Precio: $950.00
+- Termo de acero | Categoria: Hogar | Precio: $450.00
+- Mochila urbana | Categoria: Ropa | Precio: $900.00
+
+===== 3. Pedidos filtrados por estatus: Entregado =====
+Pedido #1 | Cliente: Juan Perez | Estatus: Entregado | Total: $15900.00
+Pedido #2 | Cliente: Maria Gomez | Estatus: Entregado | Total: $4850.00
+Pedido #5 | Cliente: Luis Fernandez | Estatus: Entregado | Total: $1610.00
+Pedido #8 | Cliente: Juan Perez | Estatus: Entregado | Total: $1380.00
+Pedido #9 | Cliente: Maria Gomez | Estatus: Entregado | Total: $2600.00
+Pedido #11 | Cliente: Laura Rodriguez | Estatus: Entregado | Total: $1220.00
+
+===== 4. Productos filtrados por categoria: Electronica =====
+- Laptop Gamer X1 | Categoria: Electronica | Precio: $15000.00
+- Mouse Inalambrico | Categoria: Electronica | Precio: $450.00
+- Teclado Mecanico | Categoria: Electronica | Precio: $1200.00
+- Monitor 24 pulgadas | Categoria: Electronica | Precio: $3200.00
+- Bocina Bluetooth | Categoria: Electronica | Precio: $950.00
+
+===== 5. Buscar productos por nombre: Libro =====
+- Libro de programacion Kotlin | Categoria: Libros | Precio: $550.00
+
+===== 6. Productos ordenados por precio de menor a mayor =====
+- Novela de ciencia ficcion | Categoria: Libros | Precio: $280.00
+- Set de tazas | Categoria: Hogar | Precio: $320.00
+- Camiseta Deportiva | Categoria: Ropa | Precio: $350.00
+- Mouse Inalambrico | Categoria: Electronica | Precio: $450.00
+- Termo de acero | Categoria: Hogar | Precio: $450.00
+- Libro de programacion Kotlin | Categoria: Libros | Precio: $550.00
+- Lampara de escritorio | Categoria: Hogar | Precio: $650.00
+- Pantalon de mezclilla | Categoria: Ropa | Precio: $800.00
+- Mochila urbana | Categoria: Ropa | Precio: $900.00
+- Bocina Bluetooth | Categoria: Electronica | Precio: $950.00
+- Teclado Mecanico | Categoria: Electronica | Precio: $1200.00
+- Zapatos Casual | Categoria: Ropa | Precio: $1200.00
+- Chaqueta Impermeable | Categoria: Ropa | Precio: $1800.00
+- Monitor 24 pulgadas | Categoria: Electronica | Precio: $3200.00
+- Laptop Gamer X1 | Categoria: Electronica | Precio: $15000.00
+
+===== 7. Pedidos ordenados por monto total =====
+Pedido #1 | Cliente: Juan Perez | Estatus: Entregado | Total: $15900.00
+Pedido #2 | Cliente: Maria Gomez | Estatus: Entregado | Total: $4850.00
+Pedido #12 | Cliente: Carlos Lopez | Estatus: Enviado | Total: $3650.00
+Pedido #3 | Cliente: Carlos Lopez | Estatus: Enviado | Total: $3150.00
+Pedido #9 | Cliente: Maria Gomez | Estatus: Entregado | Total: $2600.00
+Pedido #7 | Cliente: Pedro Sanchez | Estatus: Pendiente | Total: $2550.00
+Pedido #6 | Cliente: Laura Rodriguez | Estatus: Cancelado | Total: $1800.00
+Pedido #5 | Cliente: Luis Fernandez | Estatus: Entregado | Total: $1610.00
+Pedido #8 | Cliente: Juan Perez | Estatus: Entregado | Total: $1380.00
+Pedido #11 | Cliente: Laura Rodriguez | Estatus: Entregado | Total: $1220.00
+Pedido #10 | Cliente: Ana Martinez | Estatus: Cancelado | Total: $950.00
+Pedido #4 | Cliente: Ana Martinez | Estatus: Pendiente | Total: $830.00
+
+===== 8. Total vendido considerando solo pedidos entregados =====
+Total vendido: $27560.00
+
+===== 9. Cantidad de pedidos por estatus =====
+- Pendiente: 2 pedido(s)
+- Enviado: 2 pedido(s)
+- Entregado: 6 pedido(s)
+- Cancelado: 2 pedido(s)
+
+===== 10. Productos con precio mayor a $1000.00 =====
+- Laptop Gamer X1 | Categoria: Electronica | Precio: $15000.00
+- Teclado Mecanico | Categoria: Electronica | Precio: $1200.00
+- Monitor 24 pulgadas | Categoria: Electronica | Precio: $3200.00
+- Zapatos Casual | Categoria: Ropa | Precio: $1200.00
+- Chaqueta Impermeable | Categoria: Ropa | Precio: $1800.00
+
+===== 11. Cliente asociado a cada pedido =====
+Pedido #1 -> Juan Perez | juan.perez@gmail.com
+Pedido #2 -> Maria Gomez | maria.gomez@gmail.com
+Pedido #3 -> Carlos Lopez | carlos.lopez@gmail.com
+Pedido #4 -> Ana Martinez | ana.martinez@gmail.com
+Pedido #5 -> Luis Fernandez | luis.fernandez@gmail.com
+Pedido #6 -> Laura Rodriguez | laura.rodriguez@gmail.com
+Pedido #7 -> Pedro Sanchez | pedro.sanchez@gmail.com
+Pedido #8 -> Juan Perez | juan.perez@gmail.com
+Pedido #9 -> Maria Gomez | maria.gomez@gmail.com
+Pedido #10 -> Ana Martinez | ana.martinez@gmail.com
+Pedido #11 -> Laura Rodriguez | laura.rodriguez@gmail.com
+Pedido #12 -> Carlos Lopez | carlos.lopez@gmail.com
+
+===== 12. Lista resumida de pedidos =====
+- Cliente: Juan Perez | Total: $15900.00 | Estatus: Entregado
+- Cliente: Maria Gomez | Total: $4850.00 | Estatus: Entregado
+- Cliente: Carlos Lopez | Total: $3150.00 | Estatus: Enviado
+- Cliente: Ana Martinez | Total: $830.00 | Estatus: Pendiente
+- Cliente: Luis Fernandez | Total: $1610.00 | Estatus: Entregado
+- Cliente: Laura Rodriguez | Total: $1800.00 | Estatus: Cancelado
+- Cliente: Pedro Sanchez | Total: $2550.00 | Estatus: Pendiente
+- Cliente: Juan Perez | Total: $1380.00 | Estatus: Entregado
+- Cliente: Maria Gomez | Total: $2600.00 | Estatus: Entregado
+- Cliente: Ana Martinez | Total: $950.00 | Estatus: Cancelado
+- Cliente: Laura Rodriguez | Total: $1220.00 | Estatus: Entregado
+- Cliente: Carlos Lopez | Total: $3650.00 | Estatus: Enviado
+
+===== ENTREGA 2 - Motor de reportes y estadisticas =====
+
+===== 1. Total vendido por categoria =====
+- Electronica: $20750.00
+- Hogar: $2830.00
+- Libros: $1380.00
+- Ropa: $2600.00
+
+===== 2. Total vendido por cliente =====
+- Juan Perez: $17280.00
+- Maria Gomez: $7450.00
+- Luis Fernandez: $1610.00
+- Laura Rodriguez: $1220.00
+
+===== 3. Cliente con mayor monto de compras =====
+Juan Perez - $17280.00
+
+===== 4. Producto mas vendido =====
+Set de tazas - 4 unidad(es)
+
+===== 5. Categoria con mayor venta =====
+Electronica - $20750.00
+
+===== 6. Ticket promedio de pedidos entregados =====
+Ticket promedio: $4593.33
+
+===== 7. Top 5 productos mas vendidos =====
+1. Set de tazas - 4 unidad(es)
+2. Camiseta Deportiva - 4 unidad(es)
+3. Mouse Inalambrico - 3 unidad(es)
+4. Libro de programacion Kotlin - 2 unidad(es)
+5. Termo de acero - 2 unidad(es)
+
+===== 8. Top 3 clientes con mayor compra =====
+1. Juan Perez - $17280.00
+2. Maria Gomez - $7450.00
+3. Luis Fernandez - $1610.00
+
+===== 9. Pedidos agrupados por estatus =====
+- Entregado: 6 pedido(s)
+  Pedido #1 | Juan Perez | $15900.00
+  Pedido #2 | Maria Gomez | $4850.00
+  Pedido #5 | Luis Fernandez | $1610.00
+  Pedido #8 | Juan Perez | $1380.00
+  Pedido #9 | Maria Gomez | $2600.00
+  Pedido #11 | Laura Rodriguez | $1220.00
+- Enviado: 2 pedido(s)
+  Pedido #3 | Carlos Lopez | $3150.00
+  Pedido #12 | Carlos Lopez | $3650.00
+- Pendiente: 2 pedido(s)
+  Pedido #4 | Ana Martinez | $830.00
+  Pedido #7 | Pedro Sanchez | $2550.00
+- Cancelado: 2 pedido(s)
+  Pedido #6 | Laura Rodriguez | $1800.00
+  Pedido #10 | Ana Martinez | $950.00
+
+===== 10. Productos agrupados por categoria =====
+- Electronica: 5 producto(s)
+  Laptop Gamer X1 | $15000.00
+  Mouse Inalambrico | $450.00
+  Teclado Mecanico | $1200.00
+  Monitor 24 pulgadas | $3200.00
+  Bocina Bluetooth | $950.00
+- Ropa: 5 producto(s)
+  Camiseta Deportiva | $350.00
+  Pantalon de mezclilla | $800.00
+  Zapatos Casual | $1200.00
+  Chaqueta Impermeable | $1800.00
+  Mochila urbana | $900.00
+- Libros: 2 producto(s)
+  Novela de ciencia ficcion | $280.00
+  Libro de programacion Kotlin | $550.00
+- Hogar: 3 producto(s)
+  Set de tazas | $320.00
+  Lampara de escritorio | $650.00
+  Termo de acero | $450.00
+
+===== 11. Unidades vendidas por producto =====
+- Laptop Gamer X1: 1 unidad(es)
+- Mouse Inalambrico: 3 unidad(es)
+- Teclado Mecanico: 1 unidad(es)
+- Monitor 24 pulgadas: 1 unidad(es)
+- Set de tazas: 4 unidad(es)
+- Lampara de escritorio: 1 unidad(es)
+- Libro de programacion Kotlin: 2 unidad(es)
+- Novela de ciencia ficcion: 1 unidad(es)
+- Camiseta Deportiva: 4 unidad(es)
+- Zapatos Casual: 1 unidad(es)
+- Termo de acero: 2 unidad(es)
+
+===== 12. Reporte general de ventas =====
+Total de pedidos: 12
+Pedidos entregados: 6
+Pedidos cancelados: 2
+Total vendido: $27560.00
+Promedio de venta: $4593.33
+
+===== 13. Reporte de pedidos cancelados =====
+Pedido #6 | Cliente: Laura Rodriguez | Estatus: Cancelado | Total: $1800.00
+Pedido #10 | Cliente: Ana Martinez | Estatus: Cancelado | Total: $950.00
+
+===== 14. Reporte de productos no vendidos =====
+- Pantalon de mezclilla | Categoria: Ropa | Precio: $800.00
+- Chaqueta Impermeable | Categoria: Ropa | Precio: $1800.00
+- Bocina Bluetooth | Categoria: Electronica | Precio: $950.00
+- Mochila urbana | Categoria: Ropa | Precio: $900.00
+
+Reportes generados correctamente.
